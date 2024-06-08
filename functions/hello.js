@@ -1,6 +1,10 @@
 exports.handler = async function (event, context) {
     return {
         statusCode: 200,
-        body: 'Hello world!'
+        body: JSON.strongify({
+            name: 'LOMI',
+            age: 22,
+            email: 'thesecond@gmail.com'
+        })
     }
 }
